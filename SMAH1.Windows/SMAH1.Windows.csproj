@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net40</TargetFrameworks>
+    <Version>0.9.0</Version>
+    <Authors>SMAH1</Authors>
+    <Product>SMAH1 Library use in Windows only</Product>
+    <Description>Simple Popup Control from CodeProject (only work in windows)</Description>
+    <Copyright>The GNU Lesser General Public License (LGPLv3)</Copyright>
+    <PackageProjectUrl>https://www.codeproject.com/Articles/17502/Simple-Popup-Control</PackageProjectUrl>
+    <RootNamespace>SMAH1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net40'">
+    <DefineConstants>NET40;NETFULL</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net45'">
+    <DefineConstants>NET45;NETFULL</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\bin\Release\</OutputPath>
+  </PropertyGroup>
+
+</Project>

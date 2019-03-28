@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{144476D7-7D65-445E-91B2-7D9AFC377726}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HowToWork</RootNamespace>
+    <AssemblyName>HowToWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\HowToWork\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\HowToWork\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart\Chart1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart1Form.Designer.cs">
+      <DependentUpon>Chart1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart2Form.Designer.cs">
+      <DependentUpon>Chart2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart2HelperBind.cs" />
+    <Compile Include="Chart\Chart3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart3Form.Designer.cs">
+      <DependentUpon>Chart3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart4Form.Designer.cs">
+      <DependentUpon>Chart4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart5Form.Designer.cs">
+      <DependentUpon>Chart5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckedListBoxTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckedListBoxTestForm.designer.cs">
+      <DependentUpon>CheckedListBoxTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClockTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClockTestForm.Designer.cs">
+      <DependentUpon>ClockTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridView\DataGridViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView\DataGridViewForm.Designer.cs">
+      <DependentUpon>DataGridViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridView\PrintToGraphicsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView\PrintToGraphicsForm.Designer.cs">
+      <DependentUpon>PrintToGraphicsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatePickerTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatePickerTestForm.Designer.cs">
+      <DependentUpon>DatePickerTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumInfo\EnumInfoTestForm.cs" />
+    <Compile Include="EnumInfo\EnumInfoTestForm.Designer.cs">
+      <DependentUpon>EnumInfoTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumInfo\Enums.cs" />
+    <Compile Include="Export\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export\XlsExportBIFF2.cs" />
+    <Compile Include="Export\XlsExportFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\XlsExportFrom.Designer.cs">
+      <DependentUpon>XlsExportFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LargeTextViewer2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LargeTextViewer2Form.Designer.cs">
+      <DependentUpon>LargeTextViewer2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LargeTextViewerFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LargeTextViewerFrom.Designer.cs">
+      <DependentUpon>LargeTextViewerFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingTestForm.Designer.cs">
+      <DependentUpon>LoadingTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ButtonHelperClass.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="DateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateForm.Designer.cs">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaNumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaNumberForm.Designer.cs">
+      <DependentUpon>FaNumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyGrid\PropertyGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\PropertyGridForm.Designer.cs">
+      <DependentUpon>PropertyGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundNumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundNumberForm.Designer.cs">
+      <DependentUpon>RoundNumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerializeXmlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerializeXmlForm.Designer.cs">
+      <DependentUpon>SerializeXmlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleLineTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleLineTextForm.Designer.cs">
+      <DependentUpon>SingleLineTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartTextBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartTextBoxForm.Designer.cs">
+      <DependentUpon>SmartTextBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpliteButtonTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpliteButtonTestForm.designer.cs">
+      <DependentUpon>SpliteButtonTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WondowsControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WondowsControlForm.Designer.cs">
+      <DependentUpon>WondowsControlForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Chart\Chart1Form.resx">
+      <DependentUpon>Chart1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Chart2Form.resx">
+      <DependentUpon>Chart2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Chart3Form.resx">
+      <DependentUpon>Chart3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Chart4Form.resx">
+      <DependentUpon>Chart4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Chart5Form.resx">
+      <DependentUpon>Chart5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckedListBoxTestForm.resx">
+      <DependentUpon>CheckedListBoxTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockTestForm.resx">
+      <DependentUpon>ClockTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridView\DataGridViewForm.resx">
+      <DependentUpon>DataGridViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridView\PrintToGraphicsForm.resx">
+      <DependentUpon>PrintToGraphicsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatePickerTestForm.resx">
+      <DependentUpon>DatePickerTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumInfo\EnumInfoTestForm.resx">
+      <DependentUpon>EnumInfoTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\XlsExportFrom.resx">
+      <DependentUpon>XlsExportFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LargeTextViewer2Form.resx">
+      <DependentUpon>LargeTextViewer2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LargeTextViewerFrom.resx">
+      <DependentUpon>LargeTextViewerFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingTestForm.resx">
+      <DependentUpon>LoadingTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateForm.resx">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaNumberForm.resx">
+      <DependentUpon>FaNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PropertyGrid\PropertyGridForm.resx">
+      <DependentUpon>PropertyGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundNumberForm.resx">
+      <DependentUpon>RoundNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerializeXmlForm.resx">
+      <DependentUpon>SerializeXmlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleLineTextForm.resx">
+      <DependentUpon>SingleLineTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartTextBoxForm.resx">
+      <DependentUpon>SmartTextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpliteButtonTestForm.resx">
+      <DependentUpon>SpliteButtonTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WondowsControlForm.resx">
+      <DependentUpon>WondowsControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMAH1.Core\SMAH1.Core.csproj">
+      <Project>{f7c9e0f7-0afe-4792-bc10-f38ac56231c7}</Project>
+      <Name>SMAH1.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAH1.Forms.Chart\SMAH1.Forms.Chart.csproj">
+      <Project>{e0d64ecb-670e-4112-b1a0-e87f6bb65a60}</Project>
+      <Name>SMAH1.Forms.Chart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAH1.Forms.Windows\SMAH1.Forms.Windows.csproj">
+      <Project>{ee4e3579-2305-4bb0-9a22-9bf14523c624}</Project>
+      <Name>SMAH1.Forms.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAH1.Forms\SMAH1.Forms.csproj">
+      <Project>{cd2cbe75-4c4e-4ac5-826f-522f9df6fd86}</Project>
+      <Name>SMAH1.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAH1.Log\SMAH1.Log.csproj">
+      <Project>{0de2a8ed-821b-4dd1-b03a-df7f46ed0b1d}</Project>
+      <Name>SMAH1.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAH1.Windows\SMAH1.Windows.csproj">
+      <Project>{9562e521-e989-4367-a6e8-357900674310}</Project>
+      <Name>SMAH1.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIL63813.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open16X16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save16X16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
