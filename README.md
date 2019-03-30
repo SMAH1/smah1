@@ -8,7 +8,7 @@ Multi library for use:
 * SMAH1.Log:‌ Related classes for having a logger
 * SMAH1.Forms: Implement the necessary controls and classes in the WinForm
 * SMAH1.Forms.Chart:‌ A simple chart
-* SMAH1.Windows: Popup work ony in windows (See project information for on [CodeProject] (https://www.codeproject.com/Articles/17502/Simple-Popup-Control))
+* SMAH1.Windows: Popup work ony in windows.See project information for on [CodeProject](https://www.codeproject.com/Articles/17502/Simple-Popup-Control).
 * SMAH1.Forms.Windows: Implement the necessary controls and classes in a WinForm that works only on Windows
 
 ## License
