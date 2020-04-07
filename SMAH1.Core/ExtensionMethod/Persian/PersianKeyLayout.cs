@@ -49,7 +49,7 @@ namespace SMAH1.ExtensionMethod.Persian
         }
 
         /// <summary>
-        /// ژatch runs of any kind of whitespace(e.g.tabs, newlines, etc.) and replace them with a single space. Proper placement for semi space.
+        /// Catch runs of any kind of whitespace(e.g.tabs, newlines, etc.) and replace them with a single space. Proper placement for semi space.
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
