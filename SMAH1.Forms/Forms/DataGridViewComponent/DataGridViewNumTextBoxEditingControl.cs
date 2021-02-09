@@ -24,7 +24,7 @@ namespace SMAH1.Forms.DataGridViewComponent
 
         public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
         {
-            return this.Value.ToString();
+            return this.Value.ToString("F" + DecimalPlaces);
         }
 
         public int EditingControlRowIndex { get; set; }
