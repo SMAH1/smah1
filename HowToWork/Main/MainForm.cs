@@ -163,10 +163,9 @@ namespace HowToWork
 
         private void btnWaitProgress_Click(object sender, EventArgs e)
         {
-            WaitProgressForm wait = new WaitProgressForm(
-                this, BeginWaitProgress, EndWaitProgress, true);
+            WaitProgressForm wait = new WaitProgressForm(this, BeginWaitProgress, EndWaitProgress, true);
             wait.WidthDialog = this.Size.Width - 10;
-            wait.Maximum = 20;
+            wait.Maximum = 30;
             wait.Value = 0;
             wait.CancelWork += new EventHandler(CancelWorkWaitProgress);
             wait.BeginOperation();
@@ -186,10 +185,12 @@ namespace HowToWork
         {
             cancelWaitProgress = false;
             wait.Message = "Initalize";
-            for (int i = 0; i < 20 && !cancelWaitProgress; i++)
+            for (int i = 0; i < 30 && !cancelWaitProgress; i++)
             {
                 if (i == 5)
                     wait.Message = "i >= 5";
+                if (i == 23)
+                    wait.Maximum = 20;
                 wait.Value = i;
                 Thread.Sleep(200);
             }
