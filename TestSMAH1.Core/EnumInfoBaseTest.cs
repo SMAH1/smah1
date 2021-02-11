@@ -50,11 +50,13 @@ namespace TestSMAH1.Core
         {
             var res = SMAH1.EnumInfoBase<TestEnum>.GetFields();
 
-            List<TestEnum> shouldList = new List<TestEnum>();
-            shouldList.Add(TestEnum.First);
-            shouldList.Add(TestEnum.Third);
-            shouldList.Add(TestEnum.Fourth);
-            shouldList.Add(TestEnum.Second);
+            List<TestEnum> shouldList = new List<TestEnum>
+            {
+                TestEnum.First,
+                TestEnum.Third,
+                TestEnum.Fourth,
+                TestEnum.Second
+            };
 
             Assert.True(res.Count == shouldList.Count);
             Assert.True(shouldList.All(shouldItem => res.Any(item => item == shouldItem)));
