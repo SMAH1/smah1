@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new SMAH1.Forms.DataGridViewComponent.DataGridViewRowNumberColumn();
+            this.Column6 = new SMAH1.Forms.DataGridViewComponent.DataGridViewRowNumberColumn();
             this.Column2 = new SMAH1.Forms.DataGridViewComponent.DataGridViewNumTextBoxColumn();
             this.Column5 = new SMAH1.Forms.DataGridViewComponent.DataGridViewNumTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Location = new System.Drawing.Point(12, 275);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 72);
+            this.label1.Size = new System.Drawing.Size(567, 72);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
@@ -58,6 +59,7 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column6,
             this.Column2,
             this.Column5,
             this.Column3,
@@ -68,15 +70,26 @@
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(504, 260);
+            this.dgv.Size = new System.Drawing.Size(567, 260);
             this.dgv.TabIndex = 0;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Row";
             this.Column1.Name = "Column1";
+            this.Column1.NumeralSign = SMAH1.Character.NumeralSystemSign.Default;
             this.Column1.ReadOnly = true;
+            this.Column1.Start = 1;
             this.Column1.Width = 50;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Row2";
+            this.Column6.Name = "Column6";
+            this.Column6.NumeralSign = SMAH1.Character.NumeralSystemSign.Persian;
+            this.Column6.ReadOnly = true;
+            this.Column6.Start = 101;
+            this.Column6.Width = 50;
             // 
             // Column2
             // 
@@ -157,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 356);
+            this.ClientSize = new System.Drawing.Size(591, 356);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -180,6 +193,7 @@
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Label label1;
         private SMAH1.Forms.DataGridViewComponent.DataGridViewRowNumberColumn Column1;
+        private SMAH1.Forms.DataGridViewComponent.DataGridViewRowNumberColumn Column6;
         private SMAH1.Forms.DataGridViewComponent.DataGridViewNumTextBoxColumn Column2;
         private SMAH1.Forms.DataGridViewComponent.DataGridViewNumTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

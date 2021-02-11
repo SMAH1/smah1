@@ -26,11 +26,14 @@ namespace HowToWork
             dt.Rows.Add(1, 0.5, "علی", "Mohamadi", DataGridViewProgressCellState.Queue);
             dt.Rows.Add(5, 5, "Sara", "Sarvi", DataGridViewProgressCellState.Process);
             dt.Rows.Add(4, 4.3, "محسن", "Saba", DataGridViewProgressCellState.Finish);
-            dt.Rows.Add(10, 25.9, "Rahim", "vahed", 0);
+            dt.Rows.Add(10, 25.9, "Rahim", "Vahed", 0);
             dt.Rows.Add(10, 99.9, "Behzad", "Khaki", 25);
-            dt.Rows.Add(9, 17, "Mina", "mashhadi", 50);
+            dt.Rows.Add(9, 17, "Mina", "Mashhadi", 50);
             dt.Rows.Add(6, 16, "Zahra", "Tavassoly", 75);
             dt.Rows.Add(20, 12.1, "گلی", "Torki", DataGridViewProgressCellState.Error);
+            dt.Rows.Add(17, 5.3, "Sahar", "White", DataGridViewProgressCellState.Process);
+            dt.Rows.Add(8, 12, "John", "Smith", 60);
+            dt.Rows.Add(6, 14, "Jo", "Baren", 30);
 
             dgv.DataSource = dt;
 
