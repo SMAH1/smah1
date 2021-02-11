@@ -1,5 +1,7 @@
 ﻿using SMAH1.ExtensionMethod;
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -36,6 +38,16 @@ namespace SMAH1.Forms.Clickable
                     items[index].Object = value;
                     items[index].Control.Text = (value != null ? value.ToString() : string.Empty);
                 }
+            }
+
+            public ReadOnlyCollection<CheckState> GetStateOfAll()
+            {
+                List<CheckState> ret = new List<CheckState>();
+
+                for (int i = 0; i < items.Count; i++)
+                    ret.Add(items[i].Control.CheckState);
+
+                return ret.AsReadOnly();
             }
 
             internal CheckBox Controls(int index)
@@ -227,7 +239,6 @@ namespace SMAH1.Forms.Clickable
             }
         }
         #endregion
-
 
         [Browsable(false)] public ThreeStateCollection ItemThreeState { get; }
         [Browsable(false)] public CheckedCollection ItemChecked { get; }
