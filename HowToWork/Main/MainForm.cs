@@ -63,6 +63,8 @@ namespace HowToWork
             AddLine(lineindex); lineindex++;
             AddButton(new ButtonHelperClass("btnLargeTextViewer1", "Large Text Viewer", "HowToWork.LargeTextViewerForm"));
             AddButton(new ButtonHelperClass("btnLargeTextViewer2", "Large Text Viewer Bind", "HowToWork.LargeTextViewer2Form"));
+            AddLine(lineindex); lineindex++;
+            AddButton(new ButtonHelperClass("btnNumeralSystemReplacer", "Numeral Replacer", "HowToWork.Character.NumeralSystemReplacerForm"));
 
         }
 
