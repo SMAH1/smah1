@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
 using System.ComponentModel;
+using System.Windows.Forms;
 
 //main from Chinese page
 
@@ -12,6 +11,9 @@ namespace SMAH1.Forms.DataGridViewComponent
         public DataGridViewNumTextBoxColumn()
             : base(new DataGridViewNumTextBoxCell())
         {
+            Minimum = 0;
+            Maximum = 100;
+            DecimalPlaces = 0;
         }
 
         public override DataGridViewCell CellTemplate
@@ -121,7 +123,6 @@ namespace SMAH1.Forms.DataGridViewComponent
             }
             set
             {
-
                 if (this.ValueCellTemplate == null)
                 {
                     throw new InvalidOperationException("Operation cannot be completed because this DataGridViewColumn does not have a CellTemplate.");
@@ -137,6 +138,42 @@ namespace SMAH1.Forms.DataGridViewComponent
                         if (dataGridViewRow.Cells[this.Index] is DataGridViewNumTextBoxCell dataGridViewCell)
                         {
                             dataGridViewCell.SetDecimalPlaces(rowIndex, value);
+                        }
+                    }
+                    this.DataGridView.InvalidateColumn(this.Index);
+                }
+            }
+        }
+
+        [Browsable(true)]
+        [Category("Range")]
+        public decimal Increment
+        {
+            get
+            {
+                if (this.ValueCellTemplate == null)
+                {
+                    throw new InvalidOperationException("Operation cannot be completed because this DataGridViewColumn does not have a CellTemplate.");
+                }
+                return this.ValueCellTemplate.Increment;
+            }
+            set
+            {
+                if (this.ValueCellTemplate == null)
+                {
+                    throw new InvalidOperationException("Operation cannot be completed because this DataGridViewColumn does not have a CellTemplate.");
+                }
+                this.ValueCellTemplate.Increment = value;
+                if (this.DataGridView != null)
+                {
+                    DataGridViewRowCollection dataGridViewRows = this.DataGridView.Rows;
+                    int rowCount = dataGridViewRows.Count;
+                    for (int rowIndex = 0; rowIndex < rowCount; rowIndex++)
+                    {
+                        DataGridViewRow dataGridViewRow = dataGridViewRows.SharedRow(rowIndex);
+                        if (dataGridViewRow.Cells[this.Index] is DataGridViewNumTextBoxCell dataGridViewCell)
+                        {
+                            dataGridViewCell.SetIncrement(rowIndex, value);
                         }
                     }
                     this.DataGridView.InvalidateColumn(this.Index);

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
 
 //main from Chinese page
 
@@ -36,6 +34,7 @@ namespace SMAH1.Forms.DataGridViewComponent
 
         public decimal Minimum { get; set; } = int.MinValue;
         public decimal Maximum { get; set; } = int.MaxValue;
+        public decimal Increment { get; set; } = 1;
 
         public int DecimalPlaces
         {
@@ -73,6 +72,8 @@ namespace SMAH1.Forms.DataGridViewComponent
             {
                 dataGridViewCell.Minimum = this.Minimum;
                 dataGridViewCell.Maximum = this.Maximum;
+                dataGridViewCell.DecimalPlaces = this.DecimalPlaces;
+                dataGridViewCell.Increment = this.Increment;
             }
             return dataGridViewCell;
         }
@@ -82,5 +83,7 @@ namespace SMAH1.Forms.DataGridViewComponent
         internal void SetMaximum(int rowIndex, decimal value) { this.Maximum = value; }
 
         internal void SetDecimalPlaces(int rowIndex, int value) { this.DecimalPlaces = value; }
+
+        internal void SetIncrement(int rowIndex, decimal value) { this.Increment = value; }
     }
 }

@@ -169,7 +169,8 @@ namespace SMAH1.Forms.Wait
             }
             else
             {
-                progressBar1.Value = value;
+                if (value <= progressBar1.Maximum && value >= progressBar1.Minimum)
+                    progressBar1.Value = value;
             }
         }
 

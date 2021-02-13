@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net40</TargetFrameworks>
-    <Version>0.9.0</Version>
+    <Version>0.10.0</Version>
     <Authors>SMAH1</Authors>
     <Product>SMAH1.Forms Library</Product>
     <Description>The classes required to create a form-base application (component, control, utility)</Description>
@@ -58,7 +58,7 @@
   
   <PropertyGroup>
     <PackageId>SMAH1.Forms</PackageId>
-    <PackageVersion>0.9.0</PackageVersion>
+    <PackageVersion>0.10.0</PackageVersion>
     <PackageTags>Export ClockTextBox CheckedListBox SplitButton DataGridViewComponent PropertyGridComponent LargeTextViewer WaitForm</PackageTags>
     <PackageProjectUrl>https://github.com/SMAH1/smah1/</PackageProjectUrl>
   </PropertyGroup>

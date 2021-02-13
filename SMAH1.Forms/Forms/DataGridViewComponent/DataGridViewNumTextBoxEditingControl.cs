@@ -16,13 +16,15 @@ namespace SMAH1.Forms.DataGridViewComponent
             this.TabStop = false;
             this.Minimum = decimal.MinValue;
             this.Maximum = decimal.MaxValue;
+            this.DecimalPlaces = 0;
+            this.Increment = 1;
         }
 
         #region IDataGridViewEditingControl
 
         public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
         {
-            return this.Value.ToString();
+            return this.Value.ToString("F" + DecimalPlaces);
         }
 
         public int EditingControlRowIndex { get; set; }
@@ -88,6 +90,8 @@ namespace SMAH1.Forms.DataGridViewComponent
                 this.dataGridView = value;
                 Minimum = (((DataGridViewNumTextBoxCell)this.dataGridView.CurrentCell)).Minimum;
                 Maximum = (((DataGridViewNumTextBoxCell)this.dataGridView.CurrentCell)).Maximum;
+                DecimalPlaces = (((DataGridViewNumTextBoxCell)this.dataGridView.CurrentCell)).DecimalPlaces;
+                Increment = (((DataGridViewNumTextBoxCell)this.dataGridView.CurrentCell)).Increment;
             }
         }
 
