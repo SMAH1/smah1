@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net40;netcoreapp2.1</TargetFrameworks>
+    <TargetFrameworks>net45;net40;netcoreapp2.1;netcoreapp3.1;net5.0</TargetFrameworks>
     <Version>0.10.0</Version>
     <Authors>SMAH1</Authors>
     <Product>SMAH1.Log Library</Product>
@@ -34,7 +34,13 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)'=='net5.0'">
+  </ItemGroup>
+
   <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.1'">
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1'">
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +57,14 @@
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1'">
     <DefineConstants>NETCOREAPP2_1;NETCORE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1'">
+    <DefineConstants>NETCOREAPP3_1;NETCORE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net5.0'">
+    <DefineConstants>NET50;NETCORE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
