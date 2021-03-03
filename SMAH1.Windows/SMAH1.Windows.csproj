@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net40</TargetFrameworks>
-    <Version>0.9.0</Version>
+    <Version>0.11.0</Version>
     <Authors>SMAH1</Authors>
     <Product>SMAH1 Library use in Windows only</Product>
     <Description>Simple Popup Control from CodeProject (only work in windows)</Description>
@@ -55,7 +55,7 @@
   
   <PropertyGroup>
     <PackageId>SMAH1.Windows</PackageId>
-    <PackageVersion>0.9.0</PackageVersion>
+    <PackageVersion>0.11.0</PackageVersion>
     <PackageTags>Popup</PackageTags>
     <PackageProjectUrl>https://github.com/SMAH1/smah1/</PackageProjectUrl>
   </PropertyGroup>

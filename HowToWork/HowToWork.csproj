@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character\NumeralSystemReplacerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Character\NumeralSystemReplacerForm.Designer.cs">
+      <DependentUpon>NumeralSystemReplacerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chart\Chart1Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     <Compile Include="WondowsControlForm.Designer.cs">
       <DependentUpon>WondowsControlForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Character\NumeralSystemReplacerForm.resx">
+      <DependentUpon>NumeralSystemReplacerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chart\Chart1Form.resx">
       <DependentUpon>Chart1Form.cs</DependentUpon>
     </EmbeddedResource>
